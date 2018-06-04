@@ -1,0 +1,26 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var objJSON =
+            {
+                "producto":
+                [
+                    {"codigoBarra": 400, "nombre": "manzana", "precio": 5},
+                    {"codigoBarra": 401, "nombre": "pera", "precio": 7}
+                ]
+            }
+
+            console.log(objJSON.producto[0].codigoBarra+" - "+objJSON.producto[0].nombre+" - "+objJSON.producto[0].precio+"\n");
+            console.log(objJSON.producto[1].codigoBarra+" - "+objJSON.producto[1].nombre+" - "+objJSON.producto[1].precio+"\n");
+            alert(objJSON.producto[0].codigoBarra+" - "+objJSON.producto[0].nombre+" - "+objJSON.producto[0].precio+"\n");
+            alert(objJSON.producto[1].codigoBarra+" - "+objJSON.producto[1].nombre+" - "+objJSON.producto[1].precio+"\n");
+        </script>
+    </body>
+    </html>

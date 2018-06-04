@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="funciones.js"></script>
+</head>
+<body>
+        <table>
+                <tr>
+                    <td>
+                        Usuario
+                    </td>                   
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="text" id="txtUsuario">
+                    </td>                    
+                </tr>
+
+                <tr>
+                    <td>
+                         Pass
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" id="txtPass">
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="Enviar" onclick="Login.ValidarUsuario()">
+                    </td>                    
+                </tr>
+                
+                <tr>
+                    <td>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="Traer todos" onclick="Login.TraerTodos()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="Traer por nombre" onclick="Login.TraerNombre()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="Traer Argentina" onclick="Login.Argentina()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div id="divTodos"></div>
+                    </td>
+
+                    <td>
+                        <div id="divNombre"></div>
+                    </td>
+
+                    <td>
+                        <div id="divArgentina"></div>
+                    </td>
+                </tr>
+        </table>
+</body>
+</html>

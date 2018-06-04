@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arrayJSON = {
+            "productos":[
+                {"codigoBarra": 402, "nombre": "banana", "precio": 8},
+                {"codigoBarra": 403, "nombre": "kiwi", "precio": 3},
+                {"codigoBarra": 404, "nombre": "naranja", "precio": 4}
+            ]            
+        }    
+
+        console.log(arrayJSON.productos[0].codigoBarra+" - "+arrayJSON.productos[0].nombre+" - "+arrayJSON.productos[0].precio+"\n");
+        console.log(arrayJSON.productos[1].codigoBarra+" - "+arrayJSON.productos[1].nombre+" - "+arrayJSON.productos[1].precio+"\n");
+        console.log(arrayJSON.productos[2].codigoBarra+" - "+arrayJSON.productos[2].nombre+" - "+arrayJSON.productos[2].precio+"\n");
+        alert(arrayJSON.productos[0].codigoBarra+" - "+arrayJSON.productos[0].nombre+" - "+arrayJSON.productos[0].precio+"\n");
+        alert(arrayJSON.productos[1].codigoBarra+" - "+arrayJSON.productos[1].nombre+" - "+arrayJSON.productos[1].precio+"\n");
+        alert(arrayJSON.productos[2].codigoBarra+" - "+arrayJSON.productos[2].nombre+" - "+arrayJSON.productos[2].precio+"\n");        
+        
+    </script>
+</body>
+</html>

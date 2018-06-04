@@ -1,0 +1,18 @@
+"use strict";
+var Funciones;
+(function (Funciones) {
+    var xhttp = new XMLHttpRequest();
+    function RecibirJSON() {
+        xhttp.onreadystatechange = function () {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                alert(xhttp.responseText);
+                console.log(xhttp.responseText);
+            }
+        };
+        xhttp.open("POST", "recibirJson.php", true);
+        xhttp.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+        xhttp.send();
+    }
+    Funciones.RecibirJSON = RecibirJSON;
+})(Funciones || (Funciones = {}));
+Funciones.RecibirJSON();
